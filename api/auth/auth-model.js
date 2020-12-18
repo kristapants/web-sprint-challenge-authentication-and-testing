@@ -23,6 +23,6 @@ async function register(user) {
 
 function getById(id) {
   return db("users as u")
-    .where("user.id", id)
+    .where("u.id", id)
     .first();
 }
