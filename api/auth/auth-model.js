@@ -13,7 +13,6 @@ function get() {
 
 function getBy(filter) {
   return db("users")
-    .select("username", "password")
     .where(filter);
 }
 
